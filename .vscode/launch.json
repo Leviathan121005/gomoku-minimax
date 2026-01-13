@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Gomoku",
+      "request": "launch",
+      "mainClass": "gomoku_minimax.GomokuGameFX",
+      "cwd": "${workspaceFolder}",
+      "vmArgs": "--module-path=${workspaceFolder}/javafx-sdk-21.0.7/lib --add-modules=javafx.controls,javafx.fxml"
+    }
+  ]
+}
