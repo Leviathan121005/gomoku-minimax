@@ -309,7 +309,6 @@ public class GomokuGameAI {
         for (int[] action : actions) {
             simulateMove(boardCopy, action[0], action[1], currentPlayer);
             int newScore = minimax(boardCopy, currentPlayer, nextPlayer, false, action,1, alpha, beta);
-            System.out.println("Action: " + action[0] + " " + action[1] + " Score: " + newScore);
             if (maxScore < newScore) {
                 maxScore = newScore;
                 bestMove = new int[]{action[0], action[1]};
@@ -318,7 +317,6 @@ public class GomokuGameAI {
 
             alpha = max(alpha, maxScore);
         }
-        System.out.println();
         return bestMove;
     }
 }
